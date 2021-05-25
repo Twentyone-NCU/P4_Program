@@ -6,12 +6,12 @@
 
 
 # 步驟解析:
-1. 開啟 ip_forward.p4 
+1. 開啟 [ip_forward.p4](https://github.com/Twentyone-NCU/Multi_Queue/blob/main/ip_forward.p4)
 * 設定 metadata 用於之後 priority 條件用
 * 於 control egress 定義 register 存取 qdepth
 * 於 contorl ingress 定義 priority 優先等於順序
 
-2. 開啟 monitor.sh 執行檔
+2. 開啟 [monitor.sh](https://github.com/Twentyone-NCU/Multi_Queue/blob/main/monitor_qlens3h3s4.sh) 執行檔
 * 寫下需存取指定 switch 指令，並將訊息寫成新檔案
 
 3. 執行 p4 程式
@@ -33,15 +33,12 @@ gnuplot> plot "NewTextName" w lp, "NewTextName2" w lp
 # Reference
 
 ## Chih-Heng Ke柯志亨老師網站所提供:
-### H.264 RTP video streaming over P4 networks
-http://csie.nqu.edu.tw/smallko/sdn/p4_rtp_h264.htm
+### [H.264 RTP video streaming over P4 networks](http://csie.nqu.edu.tw/smallko/sdn/p4_rtp_h264.htm)
 ## Youtube Source:
 ### Channel: Chih-Heng Ke柯志亨
 ### mininet-p4 4:
-* gnuplot 的學習
-https://youtu.be/zzSksWCpu5M
+* [gnuplot 的學習](https://youtu.be/zzSksWCpu5M)
 ### 
 https://youtu.be/lRn9A-im0ws
 ### mininet-p4 18:
-* Multi-Queue 的建置
-https://youtu.be/4pFAD9R9M0k
+* [Multi-Queue 的建置](https://youtu.be/4pFAD9R9M0k)
