@@ -1,0 +1,81 @@
+{
+  "program": "ip_forward.p4",
+  "switch": "simple_switch",
+  "compiler": "p4c",
+  "options": "--target bmv2 --arch v1model --std p4-16",
+  "switch_cli": "simple_switch_CLI",
+  "cli": true,
+  "pcap_dump": false,
+  "enable_log": false,
+  "topo_module": {
+    "file_path": "",
+    "module_name": "p4utils.mininetlib.apptopo",
+    "object_name": "AppTopoStrategies"
+  },
+  "controller_module": null,
+  "topodb_module": {
+    "file_path": "",
+    "module_name": "p4utils.utils.topology",
+    "object_name": "Topology"
+  },
+  "mininet_module": {
+    "file_path": "",
+    "module_name": "p4utils.mininetlib.p4net",
+    "object_name": "P4Mininet"
+  },
+  "topology": {
+    "assignment_strategy": "mixed",
+    "auto_arp_tables": "true",
+    "auto_gw_arp": "true",
+   "links": [["h1", "s1"], ["s1", "s2"], ["s1", "s3"],["s2","s3"],["s2", "s4"],["s2", "s5"],["s3","s4"],["s3", "s5"],["s4", "s5"],["s4", "s6"],["s5","s6"],["s6", "h2"],["s7","h1"],["s7","s1"],["s7","s3"],["s3","h3"],["s2","h5"],["s5","h6"],["s4","h4"]],
+    "hosts": {
+      "h1": {
+      },
+      "h2": {
+      },
+      "h3": {
+      },
+
+      "h4": {
+      },
+
+      "h5": {
+      },
+
+      "h6": {
+      }
+    },
+
+    "switches": {
+     	 "s1": {
+        "cli_input": "cmd_s1.txt",
+        "program": "ip_forward.p4"
+	},
+     	 "s2": {
+        "cli_input": "cmd_s2.txt",
+        "program": "ip_forward.p4"
+	},
+     	 "s3": {
+        "cli_input": "cmd_s3.txt",
+        "program": "ip_forward.p4"
+	},
+      	"s4": {
+        "cli_input": "cmd_s4.txt",
+        "program": "ip_forward.p4"
+	},
+	"s5": {
+        "cli_input": "cmd_s5.txt",
+        "program": "ip_forward.p4"
+	},
+	"s6": {
+        "cli_input": "cmd_s6.txt",
+        "program": "ip_forward.p4"
+	},
+	"s7": {
+        "cli_input": "cmd_s7.txt",
+        "program": "ip_forward.p4"
+	}
+     }
+  }
+}
+

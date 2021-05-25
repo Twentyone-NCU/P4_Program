@@ -1,0 +1,7 @@
+table_set_default ipv4_lpm drop
+table_add ipv4_lpm set_nhop_index 10.0.1.0/24 => 1
+table_add ipv4_lpm set_nhop_index 10.0.6.2/32 => 2
+table_add ipv4_lpm set_nhop_index 10.0.1.3/32 => 3
+table_add ipv4_lpm set_nhop_index 10.0.1.5/32 => 5
+
+
