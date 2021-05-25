@@ -15,5 +15,9 @@
 http://csie.nqu.edu.tw/smallko/sdn/p4_rtp_h264.htm
 ## Youtube Source:
 ### Channel: Chih-Heng Ke柯志亨
-https://www.youtube.com/watch?v=4pFAD9R9M0k&list=PL0qEKESpMAbY5aiQ_5DbvBBqnm6Hy_M07&index=18&t=394s
-https://www.youtube.com/watch?v=zzSksWCpu5M&list=PL0qEKESpMAbY5aiQ_5DbvBBqnm6Hy_M07&index=4
+### mininet-p4 4:
+* gnuplot 的學習
+https://youtu.be/zzSksWCpu5M
+### mininet-p4 18:
+* Multi-Queue 的建置
+https://youtu.be/4pFAD9R9M0k
