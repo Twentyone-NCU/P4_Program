@@ -38,7 +38,7 @@ gnuplot> plot "NewTextName" w lp, "NewTextName2" w lp
 ### Channel: Chih-Heng Ke柯志亨
 ### mininet-p4 4:
 * [gnuplot 的學習](https://youtu.be/zzSksWCpu5M)
-### 
-https://youtu.be/lRn9A-im0ws
+### mininet-p4 8:
+* [queue 資訊的取得](https://youtu.be/lRn9A-im0ws)
 ### mininet-p4 18:
 * [Multi-Queue 的建置](https://youtu.be/4pFAD9R9M0k)
