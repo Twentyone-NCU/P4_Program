@@ -21,16 +21,14 @@
 
 4. 將 sh 寫出的檔案進行資料篩選動作
 ```shell
-cat <text_name> | tr "Be_replaced_words" "Replace_word" | awk '{print $<wanted_elements_column>, $<wanted_elements_column2>, ...}'
+cat <text_name> | tr "Be_replaced_words" "Replace_word" | awk '{print $<wanted_elements_column>, $<wanted_elements_column2>, ...}' > <NewTextName>
 ```
 
-
-
-
-
-
-
-
+5. 使用 gnuplot 將蒐集到的數據會出來
+```shell
+gnuplot
+plot "NewTextName" w lp, "NewTextName2" w lp
+```
 
 # Reference
 
