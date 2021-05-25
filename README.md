@@ -27,7 +27,7 @@ cat <text_name> | tr "Be_replaced_words" "Replace_word" | awk '{print $<wanted_e
 5. 使用 gnuplot 將蒐集到的數據會出來
 ```shell
 gnuplot
-plot "NewTextName" w lp, "NewTextName2" w lp
+gnuplot> plot "NewTextName" w lp, "NewTextName2" w lp
 ```
 
 # Reference
