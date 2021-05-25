@@ -40,7 +40,7 @@ http://csie.nqu.edu.tw/smallko/sdn/p4_rtp_h264.htm
 ### mininet-p4 4:
 * gnuplot 的學習
 https://youtu.be/zzSksWCpu5M
-### 監控 switch queue_length
+### 
 https://youtu.be/lRn9A-im0ws
 ### mininet-p4 18:
 * Multi-Queue 的建置
