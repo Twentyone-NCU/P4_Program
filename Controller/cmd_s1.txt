@@ -1,0 +1,12 @@
+table_set_default ipv4_lpm drop
+table_add ipv4_lpm set_nhop_index 10.0.1.1/32 => 1
+table_add ipv4_lpm set_nhop_index 10.0.6.2/24 => 2
+table_add ipv4_lpm set_nhop_index 10.0.3.3/32 => 3
+table_add ipv4_lpm set_nhop_index 10.0.4.4/32 => 4
+table_add ipv4_lpm set_nhop_index 10.0.2.5/32 => 5
+table_add ipv4_lpm set_nhop_index 10.0.5.6/32 => 6
+
+table_add forward _forward 1 => 00:00:0a:00:01:01 1
+table_add forward _forward 2 => 00:03:00:00:00:01 3
+table_add forward _forward 3 => 00:03:00:00:00:01 3
+table_add forward _forward 5 => 00:02:00:00:00:01 2
