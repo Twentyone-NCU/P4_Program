@@ -1,14 +1,4 @@
----
-title: 'Project documentation template'
-disqus: hackmd
----
-
-P4 Backup Line with Controller
-===
-
-## Table of Contents
-
-[TOC]
+# P4 Backup Line with Controller
 
 ## 簡介
 
