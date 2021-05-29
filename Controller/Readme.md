@@ -1,14 +1,4 @@
----
-title: 'Project documentation template'
-disqus: hackmd
----
-
-P4 Backup Line with Controller
-===
-
-## Table of Contents
-
-[TOC]
+# P4 Backup Line with Controller
 
 ## 簡介
 
@@ -27,7 +17,7 @@ git clone https://github.com/Twentyone-NCU/P4_Program.git
 ```shell
 cd P4_Program/Comtroller/
 ```
-2. 執行 P4
+3. 執行 P4
 ```shell
 sudo p4run
 ```
