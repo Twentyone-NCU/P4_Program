@@ -5,7 +5,8 @@
 使用工具介紹
 
 1. VM：[金門大學_柯志亨](https://webhd.ncyu.edu.tw/share.cgi?ssid=0CY94tl)  **password﹕user**
-2. ![拓譜](https://drive.google.com/file/d/1DSLmtNt9zbW81q4qUaNMthHawV36IWVR/view?usp=sharing)
+2. 拓譜
+  ![拓譜](Photo/topology.png)
 
 
 ##實驗步驟
@@ -22,7 +23,7 @@ git pull
 ```shell
 cd P4_Program/Comtroller/
 ```
-2. 執行 P4
+3. 執行 P4
 ```shell
 sudo p4run
 ```
