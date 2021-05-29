@@ -7,12 +7,18 @@
 
 # 步驟解析:
 1. 開啟 [ip_forward.p4](https://github.com/Twentyone-NCU/Multi_Queue/blob/main/ip_forward.p4)
-* 設定 metadata 用於之後 priority 條件用
-* 於 control egress 定義 register 存取 qdepth
-* 於 contorl ingress 定義 priority 優先等於順序
+>* 設定 metadata 用於之後 priority 條件用
+>* 於 control egress 定義 register 存取 qdepth
+>* 於 contorl ingress 定義 priority 優先等於順序
+>```shell
+>sudo p4run
+>```
 
-2. 開啟 [monitor.sh](https://github.com/Twentyone-NCU/Multi_Queue/blob/main/monitor_qlens3h3s4.sh) 執行檔
-* 寫下需存取指定 switch 指令，並將訊息寫成新檔案
+2. 新開一個terminal，執行 [monitor.sh](https://github.com/Twentyone-NCU/Multi_Queue/blob/main/monitor_qlens3h3s4.sh) 執行檔
+>* 寫下需存取指定 switch 指令，並將訊息寫成新檔案
+>```shell
+>./monitor.sh
+>```
 
 3. 執行 p4 程式
 * ffplay 開啟路線流量
