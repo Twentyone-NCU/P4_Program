@@ -16,7 +16,27 @@
 
 3. 執行 p4 程式
 * ffplay 開啟路線流量
+  >h2終端機 (接收端)
+  >```shell
+  >ffplay -i udp://10.0.7.2:1234
+  >```
+  
+  >h1終端機 (傳送影片  1.mp4)
+  >```shell
+  >ffmpeg -stream_loop -1 -re -i 1.mp4 -c copy -f mpegts udp://10.0.7.2:1234
+  >```
+  
 * 開啟另一邊終端傳送，在與上述影片會經過同 switch 的條件下，進行 burst traffic 動作
+  >h3終端機 (接收端)
+  >```shell
+  >iperf -s -i 1 -u
+  >```
+  
+  >h5終端機 (傳送端)
+  >```shell
+  >iperf -c 10.0.2.5 -u -b 10M -t 100
+  >```
+  
 * 查看影片是否維持一樣品質，若品質維持一樣則代表成功。
 
 4. 將 sh 寫出的檔案進行資料篩選動作
