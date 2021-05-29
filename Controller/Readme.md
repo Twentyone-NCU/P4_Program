@@ -9,9 +9,14 @@
 
 
 ##實驗步驟
-1. 下載此資料夾
+1. 下載此資料夾(或更新資料夾內容)
 ```shell
 git clone https://github.com/Twentyone-NCU/P4_Program.git
+```
+
+```shell
+cd /home/P4_Program/
+git pull
 ```
 2. 開啟 terminal 並`cd`至此資料夾下
 ```shell
@@ -56,6 +61,7 @@ iperf -c 10.0.6.2 -u -b 10M -t 1
 ```graph LR 
 h1 --> s1 --> s7 --> s4 --> s6 --> h2
 ```
+
 
 
 
