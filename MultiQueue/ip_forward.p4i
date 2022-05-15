@@ -507,8 +507,6 @@ extern void random<T>(out T result, in T lo, in T hi);
  */
 extern void digest<T>(in bit<32> receiver, in T data);
 
-extern void p4_logger<T>(in T a);
-
 enum HashAlgorithm {
     crc32,
     crc32_custom,
