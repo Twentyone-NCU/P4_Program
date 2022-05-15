@@ -17,7 +17,7 @@
 2. 新開一個terminal，執行 [monitor.sh](https://github.com/Twentyone-NCU/Multi_Queue/blob/main/monitor_qlens3h3s4.sh) 執行檔
 >* 寫下需存取指定 switch 指令，並將訊息寫成新檔案
 >```shell
->chmod +x monitor_qlens3h3s4.sh
+> monitor_qlens3h3s4.sh
 >```
 
 3. 執行 p4 程式
