@@ -124,7 +124,7 @@ control ingress(inout headers hdr, inout metadata meta, inout standard_metadata_
     apply {
         if (hdr.ipv4.isValid()){
            if (hdr.ipv4.srcAddr == 0x0a000702){   //!!NEED TO WRITE H1 MAC ADDRESS
-                standard_metadata.priority = (bit<3>)7;
+                standard_metadata.priority = (bit<3>)0;
              }
             if (ipv4_lpm.apply().hit) {
                 forward.apply();

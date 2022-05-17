@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CLI_PATH=~/home/user/Desktop/oldProject/P4_Program/MultiQueue/simple_switch_CLI
+CLI_PATH=/usr/local/bin/simple_switch_CLI
 
 #get current unix time in milliseconds
 prev_time=`date +%s%N | cut -b1-13`

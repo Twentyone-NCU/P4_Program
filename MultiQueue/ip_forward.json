@@ -591,14 +591,14 @@
             },
             {
               "type" : "hexstr",
-              "value" : "0x07"
+              "value" : "0x00"
             }
           ],
           "source_info" : {
             "filename" : "ip_forward.p4",
             "line" : 127,
             "column" : 16,
-            "source_fragment" : "standard_metadata.priority = (bit<3>)7"
+            "source_fragment" : "standard_metadata.priority = (bit<3>)0"
           }
         }
       ]
