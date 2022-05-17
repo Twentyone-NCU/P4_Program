@@ -591,14 +591,14 @@
             },
             {
               "type" : "hexstr",
-              "value" : "0x00"
+              "value" : "0x07"
             }
           ],
           "source_info" : {
             "filename" : "ip_forward.p4",
             "line" : 127,
             "column" : 16,
-            "source_fragment" : "standard_metadata.priority = (bit<3>)0"
+            "source_fragment" : "standard_metadata.priority = (bit<3>)7"
           }
         }
       ]
@@ -751,8 +751,8 @@
           "source_info" : {
             "filename" : "ip_forward.p4",
             "line" : 126,
-            "column" : 15,
-            "source_fragment" : "hdr.ipv4.srcAddr == 0x0a000702"
+            "column" : 16,
+            "source_fragment" : "hdr.ipv4.srcAddr == 0x0a000101"
           },
           "expression" : {
             "type" : "expression",
@@ -764,7 +764,7 @@
               },
               "right" : {
                 "type" : "hexstr",
-                "value" : "0x0a000702"
+                "value" : "0x0a000101"
               }
             }
           },
